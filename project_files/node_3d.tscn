@@ -81,13 +81,6 @@ height = 10.0
 height = 10.0
 radius = 1.0
 
-[sub_resource type="TextMesh" id="TextMesh_r3fl7"]
-text = "Adrian Prymas"
-font_size = 43
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_jka67"]
-size = Vector3(3.8, 1, 1)
-
 [sub_resource type="BoxMesh" id="BoxMesh_i5arm"]
 size = Vector3(2, 1, 5)
 
@@ -188,15 +181,6 @@ mesh = SubResource("CylinderMesh_wc5p8")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Level/slupek duuuzy/StaticBody3D" unique_id=1790208528]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.72029734, 0)
 shape = SubResource("CylinderShape3D_r3fl7")
-
-[node name="napis" type="MeshInstance3D" parent="Level" unique_id=81929872]
-transform = Transform3D(0.7469105, -0.043531824, 0.6634983, -0.010588624, 0.99694914, 0.07732918, -0.66484046, -0.06478359, 0.74417084, -4.288537, 2.2369244, -6.8126655)
-mesh = SubResource("TextMesh_r3fl7")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Level/napis" unique_id=1118443316]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/napis/StaticBody3D" unique_id=270604867]
-shape = SubResource("BoxShape3D_jka67")
 
 [node name="pudelko_dlugie" type="MeshInstance3D" parent="Level" unique_id=241874667]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9346795, 0.48743773, 5.275026)
